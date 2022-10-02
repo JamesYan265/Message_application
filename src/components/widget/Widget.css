@@ -1,0 +1,39 @@
+.widget {
+  flex: 0.35;
+  overflow-y: scroll;
+}
+.widget::-webkit-scrollbar {
+  display: none;
+}
+.widget .widget_input {
+  display: flex;
+  align-items: center;
+  background-color: var(--Mainbackground);
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.widget .widget_input input {
+  border: none;
+  background-color: var(--Mainbackground);
+  outline: none;
+}
+.widget .widget_input .widget_searchIcon {
+  color: gray;
+}
+.widget .widgetsContainer {
+  margin-top: 5px;
+  margin-left: 20px;
+  padding: 20px;
+  padding-top: 5px;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+}
+.widget .widgetsContainer .signOutButton {
+  width: 100%;
+}
+.widget .widgetsContainer h2 {
+  font-size: 18px;
+  font-weight: 800;
+}/*# sourceMappingURL=Widget.css.map */

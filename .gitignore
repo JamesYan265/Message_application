@@ -18,6 +18,14 @@
 .env.test.local
 .env.production.local
 
+# firebase
+.firebase
+.firebasesrc
+.firebase.json
+/src/firebase.jsx
+/src/firebase_upload.jsx
+
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

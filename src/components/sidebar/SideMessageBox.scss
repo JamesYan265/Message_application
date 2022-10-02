@@ -1,0 +1,93 @@
+.messageBox_S {
+    padding-bottom: 10px;
+    border-bottom: 8px solid var(--Mainbackground);
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: var(--Mainbackground);
+
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        .MessageBox_input_S {
+            padding: 20px;
+            display: flex;
+            textarea {
+                flex: 1;
+                font-size: 20px;
+                margin-left: 20px;
+                border: none;
+                outline: none;
+                background-color: var(--Mainbackground);
+                overflow: hidden;
+                height: 80px;
+                margin-top: 10px;
+                resize: none;
+            }
+        }
+
+        .ImageUpload_label_S {
+            cursor: pointer;
+            background-color: var(--primary);
+            color:white;
+            font-size: 15px;
+            width: 100%;
+            height:50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 900;
+            margin-top: 1px;
+            transition: all 0.2s ease-in;
+            &:hover {
+                scale: 0.95;
+            }
+            
+            .messageBox_imageInput_S {
+                border: none;
+                padding: 20px;
+                outline: none;
+                display: none;
+            }
+
+        }
+
+        .Alert_S {
+            color: red;
+            font-weight: 800;
+            margin: 0 auto;
+            display: none;
+        }
+
+
+        .displayBox_S {
+            border-radius: 15px;
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 30%;
+            max-height: 500px;
+            margin: 5px;
+        }
+    
+        .MessageBox_MessageButton_S {
+            background-color: var(--primary) 
+            !important;
+            color:white !important;
+            border-radius: 30px !important;
+            font-weight: 900 !important;
+            width: 130px !important;
+            height: 40px !important;
+            margin-top: 20px !important;
+            margin-left: auto !important;
+            transition: all 0.2s ease-in;
+            &:hover {
+                scale: 0.95;
+            }
+        }
+
+    }
+
+}

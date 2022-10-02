@@ -1,0 +1,81 @@
+.messageBox_S {
+  padding-bottom: 10px;
+  border-bottom: 8px solid var(--Mainbackground);
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: var(--Mainbackground);
+}
+.messageBox_S form {
+  display: flex;
+  flex-direction: column;
+}
+.messageBox_S form .MessageBox_input_S {
+  padding: 20px;
+  display: flex;
+}
+.messageBox_S form .MessageBox_input_S textarea {
+  flex: 1;
+  font-size: 20px;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  background-color: var(--Mainbackground);
+  overflow: hidden;
+  height: 80px;
+  margin-top: 10px;
+  resize: none;
+}
+.messageBox_S form .ImageUpload_label_S {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: white;
+  font-size: 15px;
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  margin-top: 1px;
+  transition: all 0.2s ease-in;
+}
+.messageBox_S form .ImageUpload_label_S:hover {
+  scale: 0.95;
+}
+.messageBox_S form .ImageUpload_label_S .messageBox_imageInput_S {
+  border: none;
+  padding: 20px;
+  outline: none;
+  display: none;
+}
+.messageBox_S form .Alert_S {
+  color: red;
+  font-weight: 800;
+  margin: 0 auto;
+  display: none;
+}
+.messageBox_S form .displayBox_S {
+  border-radius: 15px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+  max-height: 500px;
+  margin: 5px;
+}
+.messageBox_S form .MessageBox_MessageButton_S {
+  background-color: var(--primary) !important;
+  color: white !important;
+  border-radius: 30px !important;
+  font-weight: 900 !important;
+  width: 130px !important;
+  height: 40px !important;
+  margin-top: 20px !important;
+  margin-left: auto !important;
+  transition: all 0.2s ease-in;
+}
+.messageBox_S form .MessageBox_MessageButton_S:hover {
+  scale: 0.95;
+}/*# sourceMappingURL=SideMessageBox.css.map */

@@ -1,0 +1,104 @@
+.sidebar {
+    border-right: 1px solid var(--Mainbackground);
+    flex: 0.2;
+    min-width: 250px;
+    margin-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+
+
+    .sidebar_icon {
+        color: var(--primary);
+        font-size: 30px !important;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar_Message {
+        background-color: var(--primary) !important;
+        color: white !important;
+        font-weight: 900 !important;
+        border: none !important;
+        border-radius: 30px !important;
+        height: 50px !important;
+        margin-top: 20px !important;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-right: 20px;
+        font-weight: 800;
+    }
+
+    .signOutButton {
+        background-color: var(--primary);
+        color:white;
+        border: none;
+        border-radius: 30px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 950;
+        margin-top: 400px;
+        cursor: pointer;
+    }
+
+    .popup {
+        position: absolute;
+        top:-200px;
+        left:0px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        z-index: 1000;
+        width: 600px;
+        height: 600px;
+        display: none;
+
+    
+        .frontlay {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: var(--Mainbackground);
+            border-radius: 10px;
+            border: 2px solid black;
+            width: 100%;
+            height: 100%;
+            margin: 10px;
+            position: absolute;
+            top:250px;
+            left: 50%;
+            
+        }
+
+        .cancel {
+            position: absolute;
+            top:265px;
+            left: 52%;
+            margin-left: 570px;
+            color:red;
+            z-index: 10000;
+            cursor: pointer;
+            transition: scale 0.3s ease;
+            &:hover {
+                scale: (1.5);
+            }
+        }
+
+        .overlay {
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--primary);
+            opacity: 0.5;
+            z-index: -1;
+        }
+    }
+
+}

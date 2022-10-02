@@ -1,0 +1,18 @@
+.response {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--Mainbackground);
+  background-color: var(--Mainbackground);
+}
+.response .response_avatar {
+  margin: 15px;
+}
+.response .response_text {
+  font-weight: normal;
+  width: 70%;
+}
+.response .response_time {
+  font-size: 10px;
+  width: 20%;
+}/*# sourceMappingURL=Response.css.map */

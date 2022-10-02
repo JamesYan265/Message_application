@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.loginContainer {
+  height: 100vh;
+  background: var(--primary);
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.loginContainer .loginTitle {
+  flex: 0.5;
+  color: white;
+  padding: 50px;
+}
+.loginContainer .loginTitle p {
+  font-weight: 800;
+  font-size: 50px;
+}
+.loginContainer .loginBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  flex: 0.5;
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin: 25px;
+  opacity: 0.8;
+  filter: blur(3px);
+  transition: all 2s ease;
+  border: 5px solid;
+}
+.loginContainer .loginBox:hover {
+  filter: blur(0px);
+  opacity: 1;
+  cursor: pointer;
+}
+.loginContainer .loginBox .loginButton {
+  width: 70%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+.loginContainer .loginBox .loginButton p {
+  margin: 10px;
+}/*# sourceMappingURL=Home.css.map */

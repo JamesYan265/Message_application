@@ -1,0 +1,30 @@
+.commentBox {
+  width: 100%;
+  height: auto;
+}
+.commentBox form {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px 0px;
+}
+.commentBox form .response_input {
+  border: none;
+  outline: none;
+  font-size: 30px;
+  width: 80%;
+}
+.commentBox form .MessageBox_MessageButton {
+  border-radius: 20px;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 800;
+}
+.commentBox .Alert_Comment {
+  color: red;
+  font-weight: 800;
+  margin: 0 auto;
+  display: none;
+  z-index: 100;
+}/*# sourceMappingURL=Comment.css.map */

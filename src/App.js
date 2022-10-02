@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './components/sidebar/Sidebar';
+import Timeline from './components/timeline/Timeline';
+import Widget from './components/widget/Widget';
+import Home from './Home';
+import { useAuthState } from "react-firebase-hooks/auth";
+import {auth, provider} from "./firebase";
+
 
 function App() {
+  const [user] = useAuthState(auth);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {user ? (
+        <>
+        <Sidebar />
+        <Timeline />
+        <Widget />
+        </>
+      ) : (
+        <Home />
+      )}
     </div>
   );
 }
+
+
+
+
+
+
 
 export default App;

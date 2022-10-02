@@ -1,0 +1,53 @@
+.post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--Mainbackground);
+    cursor: pointer;
+    .post_avatar {
+        padding: 15px ;
+    }
+    .post_body {
+        flex: 1;
+        
+
+        img {
+           border-radius: 20px;
+           width: 80%; 
+        }
+        .post_header {
+            .post_headerText {
+
+                
+                h3 {
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                }
+                .post_headerSpecial {
+                    font-weight: 600;
+                    font-size: 12px;
+                    color:gray;
+
+                    .post_badge {
+                        font-size: 14px !important;
+                        color:var(--primary)
+                    }
+                }
+            }
+            .post_headerDescription {
+                margin-bottom: 10px;
+                font-size: 15px;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+
+        .post_footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+    }
+}
