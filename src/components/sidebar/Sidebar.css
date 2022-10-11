@@ -23,6 +23,9 @@
   margin-top: 20px !important;
   width: 100%;
 }
+.sidebar .sidebar_Message .Mbtn {
+  display: none;
+}
 .sidebar h2 {
   font-size: 20px;
   margin-right: 20px;
@@ -89,4 +92,63 @@
   background-color: var(--primary);
   opacity: 0.5;
   z-index: -1;
+}
+
+@media (max-width: 930px) {
+  .popup .frontlay {
+    left: 25% !important;
+    width: 80% !important;
+  }
+  .popup .cancel {
+    left: 7% !important;
+  }
+}
+@media (max-width: 800px) {
+  .sidebar {
+    flex: 0.1;
+    min-width: 50px;
+  }
+  .sidebar .sidebar_icon {
+    margin-left: 20%;
+  }
+  .sidebar .sidebar_Message {
+    border-radius: 50% !important;
+    font-size: 1px !important;
+    min-width: 50px;
+    width: auto;
+  }
+  .sidebar .sidebar_Message div .Mbtn {
+    display: block;
+  }
+  .sidebar .sidebar_Message div p {
+    display: none;
+  }
+  .sidebar .signOutButton {
+    border-radius: 50%;
+    min-width: 50px;
+    height: 50px;
+  }
+  .sidebar .signOutButton p {
+    display: none;
+  }
+  .popup .frontlay {
+    left: 20% !important;
+    width: 70% !important;
+  }
+  .popup .cancel {
+    left: -8% !important;
+  }
+}
+@media (max-width: 612px) {
+  .popup {
+    width: 600px !important;
+  }
+  .popup .frontlay {
+    left: 0% !important;
+    width: 60% !important;
+    height: 50% !important;
+  }
+  .popup .cancel {
+    left: -40% !important;
+  }
 }/*# sourceMappingURL=Sidebar.css.map */

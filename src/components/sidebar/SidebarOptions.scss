@@ -19,4 +19,15 @@
     
 }
 
+@media only screen and (max-width:800px) { 
+    .sidebarOption {
+        margin-bottom: 25px;
+        margin-left: 20%;
+
+        h2 {
+            display: none;
+        }
+    }
+}
+
 

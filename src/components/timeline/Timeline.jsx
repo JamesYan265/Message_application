@@ -5,11 +5,22 @@ import './Timeline.css';
 import db from '../../firebase';
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore"; 
 import FlipMove from 'react-flip-move';
+import SearchBox from './SearchBox';
 
-function Timeline() {
+
+
+function  Timeline({searchfun, setSearchfun, sideclick}) {
   //把doc中的Data放進useState的posts中，posts是陣列
   const [posts, setPosts] = useState([]);
-  const [postId, setPostId] = useState([]);
+  
+  //Check是否要TimeLine轉換形態
+  let sideCheck = false;
+
+  if(sideclick === "Search") {
+    sideCheck = true;
+  } else if(sideCheck === "Home") {
+    sideCheck = false;
+  }
   
   useEffect(()=> {
     //取得Firestore中的資料
@@ -27,15 +38,21 @@ function Timeline() {
       setPosts(querySnapshot.docs.map((doc) => doc.data()));
     })
     
+    
   }, []);
+
+  useEffect(()=> {
+    setPosts(searchfun);
+  },[searchfun])
+ 
   return (
     <div className='timeline'>
       {/* Header */}
       <div className="timeline_header">
-        <h2>Home</h2>
+        {sideCheck ? (<h2>Search</h2>) : (<h2>Home</h2>)}
       </div>
       {/* MessageBox */}
-      <MessageBox />
+      {sideCheck ? (<SearchBox setSearchfun={setSearchfun} searchfun={searchfun}/>) :  (<MessageBox />)}
       {/* Post */}
       {/* {console.log(posts)} */}
       <FlipMove>

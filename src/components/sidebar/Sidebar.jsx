@@ -7,22 +7,38 @@ import SidebarOptions from './SidebarOptions';
 import { Button } from '@mui/material';
 import './Sidebar.css';
 import { auth } from '../../firebase';
-import { Cancel, Logout } from '@mui/icons-material';
+import { Cancel, Logout, Message } from '@mui/icons-material';
 import SideMessageBox from './SideMessageBox';
+import { useEffect } from 'react';
 
-function sidebar() {
+function Sidebar({sideclick, setSideClick}) {
+
+  //click sidebar Opection
+  const SearchBtn = () => {
+    setSideClick("Search");
+  }
+  const HomeBtn = () => {
+    setSideClick("Home");
+  }
+  
   return (
     <div className='sidebar'>
       {/* Icon */}
       <QuestionAnswerIcon className='sidebar_icon'/>
 
       {/* SidebarOption */}
-      <SidebarOptions text="Home" Icon={HomeIcon} active/>
-      <SidebarOptions text="Search" Icon={SearchIcon}/>
+      <div onClick={HomeBtn}>
+        <SidebarOptions text="Home" Icon={HomeIcon} active/>
+      </div>
+      <div onClick={SearchBtn}>
+        <SidebarOptions text="Search" Icon={SearchIcon} />
+      </div>
       <SidebarOptions text="Notification" Icon={NotificationsIcon}/>
-      
+
       {/* Button */}
-      <Button variant="outlined" className='sidebar_Message' onClick={PopOpen}>Message</Button>
+      <Button variant="outlined" className='sidebar_Message' onClick={PopOpen}>
+        <div><Message className='Mbtn' /><p>Message</p></div>
+      </Button>
       <Popupbox />
       <SignOutButton />
     </div>
@@ -63,4 +79,4 @@ function Popupbox() {
   )
 }
 
-export default sidebar
+export default Sidebar

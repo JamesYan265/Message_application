@@ -42,3 +42,10 @@
         }
     }
 }
+
+@media only screen and (max-width:999px) {
+    .widget {
+        flex:0;
+        display: none;
+    }
+}

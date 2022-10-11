@@ -15,4 +15,14 @@
 }
 .sidebarOption.sidebarOption_active {
   color: var(--primary);
+}
+
+@media only screen and (max-width: 800px) {
+  .sidebarOption {
+    margin-bottom: 25px;
+    margin-left: 20%;
+  }
+  .sidebarOption h2 {
+    display: none;
+  }
 }/*# sourceMappingURL=SidebarOptions.css.map */

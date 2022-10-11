@@ -55,7 +55,6 @@ function MessageBox() {
 
     //Update Image
     if (file.name) {
-      console.log("Image is alive");
       //upload image
       const storageRef = ref(storage, "image/" + file.name);
       const uploadImage = uploadBytesResumable(storageRef, file);
@@ -98,7 +97,7 @@ function MessageBox() {
     e.preventDefault();
     let warning = document.getElementsByClassName('Alert')[0];
     //upload data
-    if(message == "" && messageImage == "") {
+    if(message === "" && messageImage === "") {
       warning.style.display = 'block';
     } else {
       await addDoc(collection(db, "posts"), {
@@ -130,7 +129,7 @@ function MessageBox() {
         <Alert />
         
         
-        {displayImage == "" ? (
+        {displayImage === "" ? (
           <>
             <label className='ImageUpload_label'>
                 <input className='messageBox_imageInput' type="file" onChange={OnFileUploadToFirebase} accept=".png, .jpg, .jpeg, .gif"></input><ImageIcon ></ImageIcon>

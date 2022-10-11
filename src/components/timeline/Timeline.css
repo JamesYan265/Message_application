@@ -18,4 +18,10 @@
 .timeline .timeline_header h2 {
   font-size: 20px;
   font-weight: 800;
+}
+
+@media only screen and (max-width: 999px) {
+  .timeline {
+    flex: 0.9;
+  }
 }/*# sourceMappingURL=Timeline.css.map */
