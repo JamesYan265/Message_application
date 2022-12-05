@@ -65,7 +65,7 @@ const Post = forwardRef(
                                 </span>
                             </h3>
                         </div>
-                        <div className="post_headerDescription">
+                        <div className="post_headerDescription" style={{whiteSpace: 'pre-line', lineBreak: 'anywhere'}}>
                             <p>{text}</p>
                         </div>
                     </div>

@@ -50,7 +50,7 @@ function Widget({searchfun, setSearchfun}) {
         
         <TwitterTimelineEmbed 
           sourceType='profile' 
-          screenName='ChelseaFC'
+          screenName='HKObservatory'
           options={{height:400}}/>
       </div>
     </div>

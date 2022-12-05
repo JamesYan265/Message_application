@@ -97,6 +97,12 @@ function MessageBox() {
     e.preventDefault();
     let warning = document.getElementsByClassName('Alert')[0];
     //upload data
+    if(message.trim().length > 0 ) {
+    } else {
+      warning.style.display = 'block';
+      return;
+    }
+    
     if(message === "" && messageImage === "") {
       warning.style.display = 'block';
     } else {

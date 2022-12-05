@@ -3,12 +3,12 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey:"AIzaSyDLYAlMk8d4CPwlL9heZreAb_9FhSGNoPU",
-    authDomain: "message-box-151b0.firebaseapp.com",
-    projectId: "message-box-151b0",
-    storageBucket: "message-box-151b0.appspot.com",
-    messagingSenderId: "229284509119",
-    appId: "1:229284509119:web:033bd3fa4d1560a7f9dd0a"
+    apiKey: "AIzaSyBOAHe3CaUPprMYrulUjMcGNWABnFwceMQ",
+    authDomain: "public-message-application.firebaseapp.com",
+    projectId: "public-message-application",
+    storageBucket: "public-message-application.appspot.com",
+    messagingSenderId: "473837277732",
+    appId: "1:473837277732:web:31b168e44f3531bf47beb1"
   };
   
 const app = initializeApp(firebaseConfig);

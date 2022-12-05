@@ -97,7 +97,13 @@ function SideMessageBox() {
     e.preventDefault();
     let warning = document.getElementsByClassName('Alert_S')[0];
     //upload data
-    if(message == "" && messageImage == "") {
+    if(message.trim().length > 0 ) {
+    } else {
+      warning.style.display = 'block';
+      return;
+    }
+
+    if(message === "" && messageImage === "") {
       warning.style.display = 'block';
     } else {
       await addDoc(collection(db, "posts"), {
