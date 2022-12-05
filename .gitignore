@@ -19,6 +19,8 @@
 .env.production.local
 
 # firebase
+/src/firebase_upload
+/src/firebase
 # .firebase
 # .firebasesrc
 # .firebase.json
